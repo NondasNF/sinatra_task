@@ -1,13 +1,16 @@
 require 'sinatra'
 
 get '/' do
-  send_file File.join(settings.public_folder, 'index.html')
+  @title = :index
+  erb :index
 end
 
 get '/pull-requests' do
-  send_file File.join(settings.public_folder, 'code-info.html')
+  @title = :pullrequests
+  erb :pullrequests
 end
 
 get '/college-info' do
-  send_file File.join(settings.public_folder, 'college-info.html')
+  @title = :college_info
+  erb :college_info
 end

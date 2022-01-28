@@ -1,0 +1,12 @@
+body, div{
+  padding: 15px;
+}
+div{
+  height: 100%;
+  border: 3px solid rgba(0,0,0,0.15);
+  border-radius: 15px;
+}
+h1{
+  margin-block-start: 0;
+  margin-block-end: 10px;
+}
